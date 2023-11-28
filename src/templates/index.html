@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Iris Predictor</title>
+</head>
+<body>
+    <h1>Flask Iris Predictor</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="file">Subir archivo CSV:</label>
+        <input type="file" name="file" id="file">
+        <br><br>
+        <label for="sepal_length">Sepal Length:</label>
+        <input type="text" name="sepal_length" id="sepal_length">
+        <br>
+        <label for="sepal_width">Sepal Width:</label>
+        <input type="text" name="sepal_width" id="sepal_width">
+        <br>
+        <label for="petal_length">Petal Length:</label>
+        <input type="text" name="petal_length" id="petal_length">
+        <br>
+        <label for="petal_width">Petal Width:</label>
+        <input type="text" name="petal_width" id="petal_width">
+        <br><br>
+        <input type="submit" value="Predecir">
+    </form>
+</body>
+</html>
