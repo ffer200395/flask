@@ -1,7 +1,5 @@
 from flask import Flask, render_template, request
 import pandas as pd
-import os
-
 import pickle
 
 app = Flask(__name__)
@@ -40,5 +38,9 @@ def predict():
             return f'Error: {e}'
     return 'Error en la predicción'
 
+"""
 if __name__ == '__main__':
     app.run(debug=True)
+"""
+import pickle 
+print(pickle.format_version)
