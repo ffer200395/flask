@@ -5,7 +5,7 @@ import pickle
 app = Flask(__name__)
 
 # Cargar el modelo preentrenado
-model = pickle.load(open('models/iris_model.pkl', "rb"))
+model = pickle.load(open('iris_model.pkl', "rb"))
 
 # Página de inicio
 @app.route('/')
