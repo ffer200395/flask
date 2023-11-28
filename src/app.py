@@ -4,8 +4,10 @@ import pickle
 
 app = Flask(__name__)
 
+import os
+model_path = os.path.join(os.getcwd(), 'models', 'iris_model.pkl')
 # Cargar el modelo preentrenado
-model = pickle.load(open('models/iris_model.pkl', "rb"))
+model = pickle.load(open(model_path, "rb"))
 
 # Página de inicio
 @app.route('/')
